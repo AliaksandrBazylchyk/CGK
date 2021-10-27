@@ -1,0 +1,61 @@
+.guest {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bigLogo {
+    width: 320px;
+    margin-left: 100px;
+}
+
+.guest_text {
+    width: 60%;
+    height: 100%;
+
+}
+
+.guest_header {
+    font-family: Abibas;
+    color: #ffff00;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.guest_subheader {
+    font-family: Abibas;
+    color: white;
+    font-size: 24px;
+}
+
+.guest_info {
+    width: 66%;
+
+}
+
+.guest_right_info {
+    float: right;
+    text-align: right;
+    margin-top: 35px;
+    margin-right: 15px;
+}
+
+@font-face {
+    src: local('abibas.otf'), url(./../../../../fonts/abibas.otf) format('otf');
+}
+
+@keyframes down_to_up {
+    0% {
+        opacity: 0%;
+        transform: translateY(+150%);
+    }
+    25%{
+        opacity: 5%;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
