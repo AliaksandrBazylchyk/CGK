@@ -1,0 +1,89 @@
+.contact_page {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.feedback_form {
+  max-width: 50%;
+  max-height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: content-box;
+  padding: 30px;
+  background-color: #ffa600;
+  color: black;
+  border: black 3px solid;
+  border-radius: 10px;
+}
+
+
+.information_field {
+  height: 100%;
+  width: 50%;
+}
+
+.first_and_second_name_fields {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feedback_text {
+  width: 100%;
+  font-size: 14pt;
+}
+
+.feedback_header {
+  font-family: Abibas;
+  color: #ffff00;
+  font-size: 48px;
+  margin-bottom: 0px;
+  width: 75%;
+  margin-left: 1%;
+}
+
+.feedback_text_left {
+  width: 75%;
+  margin-left: 1%;
+}
+
+.feedback_text_right {
+  float: right;
+  width: 75%;
+  text-align: right;
+  margin-left: 24%;
+  margin: 1%;
+}
+
+.feedback_footer {
+  font-family: Abibas;
+  color: #ffff00;
+  font-size: 24pt;
+  margin: 0px;
+  width: 75%;
+  float: right;
+}
