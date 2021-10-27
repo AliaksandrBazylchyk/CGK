@@ -1,4 +1,6 @@
-logged_page {
+$_yellow: #ffff00;
+
+.logged_page {
   width: 100%;
   height: calc(100vh - 60px);
   display: flex;
@@ -6,8 +8,77 @@ logged_page {
   justify-content: center;
 }
 
-lobby_list {
+.lobby_list {
   width: 70%;
   height: 70%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #373434;
+  border-radius: 10px;
+  border: black solid 3px;
 }
+
+.lobby_list_header {
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  font-family: Abibas;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0;
+    margin-block: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.lobby_name {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: $_yellow 2px solid;
+}
+
+.quantity_ {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: $_yellow 2px solid;
+}
+
+.leader_name {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: $_yellow 2px solid;
+}
+
+.pack_name {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: $_yellow 2px solid;
+}
+
+.connection_button {
+  width: 20%;
+}
+
+.line_splitting {
+  font-family: Abibas;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.line_splitting:hover {
+  background-color: rgba(72, 72, 72, 0.58);
+  transition-duration: 200ms;
+}
+
+
