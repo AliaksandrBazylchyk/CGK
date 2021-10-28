@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 
 import bigLogo from "./bigLogo.png";
+
 import "./styles.scss"
 
 const Guest = () => {
@@ -25,13 +26,12 @@ const Guest = () => {
           <p className="guest_header">
             Проверь свою интуицию
           </p>
-
-        <p className="guest_subheader">
-          Что может быть лучше, чем проверка своих знаний
-          в совершено разных направлениях. узнай, на сколько
-          широкий твой кругозор не выходя из дома.
-          А заодно сможешь узнать что-то новое
-        </p>
+          <p className="guest_subheader">
+            Что может быть лучше, чем проверка своих знаний
+            в совершено разных направлениях. узнай, на сколько
+            широкий твой кругозор не выходя из дома.
+            А заодно сможешь узнать что-то новое
+          </p>
         </div>
       </div>
     </div>
