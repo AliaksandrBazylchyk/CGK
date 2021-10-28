@@ -85,7 +85,6 @@
   border-bottom: 1px solid #666;
   color: #ddd;
   font-size: 14px;
-  text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
 }
@@ -105,6 +104,8 @@
   font-size: 14px;
   cursor: pointer;
   outline: none;
+  font-size: 14pt;
+  margin: 3px auto;
 }
 
 .feedback_form_button:hover {
@@ -112,35 +113,20 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .information_field {
   width: 50%;
+  font-family: Abibas;
 
 }
 
 .feedback_text {
   width: 100%;
   font-size: 14pt;
-  font-family: Arial;
+  font-family: Abibas;
 }
 
 .feedback_header {
-  font-family: Abibas;
+
   color: #ffff00;
   font-size: 48px;
   margin-bottom: 0px;
@@ -159,11 +145,12 @@
   width: 75%;
   text-align: right;
   margin: 1%;
-  margin-left: 24%;
+
+
 }
 
 .feedback_footer {
-  font-family: Abibas;
+
   color: #ffff00;
   font-size: 18pt;
   margin: 0;
