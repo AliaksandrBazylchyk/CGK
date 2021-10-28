@@ -4,15 +4,42 @@ import "./styles.scss";
 const Contacts = () => {
   return (
     <div className="contact_page">
-      <div className="feedback_form">
-        <div className="first_and_second_name_fields">
-          <input className="input_field" type="text" placeholder="Имя"/>
-          <input className="input_field" type="text" placeholder="Фамилия"/>
+
+
+      <div className="feedback_container">
+        <div className="feedback_screen">
+          <div className="feedback_screen_body">
+            <div className="feedback_body_item left">
+              <div className="feedback_title">
+                <span>Обратная</span>
+                <span>Связь</span>
+              </div>
+              <div className="feedback_contact">
+                E-mail : bazylchik.a@gmail.com
+              </div>
+
+            </div>
+            <div className="feedback_body_item">
+              <div className="app-form">
+                <div className="feedback_form_group">
+                  <input className="feedback_form_control" placeholder="Имя"/>
+                </div>
+                <div className="feedback_form_group">
+                  <input className="feedback_form_control" placeholder="Почта"/>
+                </div>
+                <div className="feedback_form_group">
+                  <input className="feedback_form_control" placeholder="Тема"/>
+                </div>
+                <div className="feedback_form_group message">
+                  <input className="feedback_form_control" placeholder="Сообщение"/>
+                </div>
+                <div className="feedback_form_group buttons">
+                  <button className="feedback_form_button">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <label>Почта</label>
-        <input className="input_field" type="text" placeholder=""/>
-        <label>Текст</label>
-        <textarea className="textaria_field"/>
       </div>
       <div className="information_field">
         <div className="feedback_header">
@@ -21,29 +48,20 @@ const Contacts = () => {
           </p>
         </div>
         <div className="feedback_text">
-          <p className="feedback_text_left">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p className="feedback_text_left">Данная страница была создана чтобы получать обратную связь от пользователей
+            нашего сервиса. Мы готовы выслушать лубую критику и пожелания, готовы принять ваши вопросы или просто узнать
+            как прошел ваш день :)</p>
           <br/>
-          <p className="feedback_text_right">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p className="feedback_text_right">Каждое сообщение отправленное из этой формы <b>важно</b> для каждого из
+            администраторов проекта. Наша политика - держать близкий контакт с нашими пользователями.</p>
           <div className="feedback_footer">
             <p>
               Спасибо что вы с нами
             </p>
           </div>
         </div>
-
       </div>
+
     </div>
   )
 }
