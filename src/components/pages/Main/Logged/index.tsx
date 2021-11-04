@@ -1,5 +1,7 @@
-import React from "react"
-import "./styles.scss"
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import "./styles.scss";
 
 const lobbies = [
   {
@@ -40,7 +42,7 @@ const Logged = () => {
         </div>
         <div className="lobby_table">
           {lobbies.map((lobby) => (
-            <div className="line_splitting">
+            <div key={lobby.name} className="line_splitting">
               <div className="lobby_name">
                 {lobby.name}
               </div>
@@ -54,10 +56,11 @@ const Logged = () => {
                 {lobby.pack}
               </div>
               <div className="connection_button">
-                <button onClick = {() => alert(1)}
-                >
-                Connect
-                </button>
+                <Link className="connection_link" to='/lobby'>
+                  <button>
+                    Connect
+                  </button>
+                </Link>
               </div>
             </div>
           ))

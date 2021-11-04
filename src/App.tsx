@@ -8,6 +8,7 @@ import Rights from './components/pages/Rights';
 import Rules from './components/pages/Rules';
 
 import './App.scss';
+import Lobby from 'components/pages/Lobby';
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
           <Route
             path="/Rules"
             component={() => <Rules/>}
+          />
+          <Route
+            path="/Lobby"
+            component={() => <Lobby/>}
           />
       </Switch>
     </div>
