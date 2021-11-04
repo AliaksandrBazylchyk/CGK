@@ -13,11 +13,11 @@ const LobbySettings = () => {
     <div className="lobby_settings">
       <div className="lobby_settings__section">
         <span>Lobby name</span>
-        <input type="text" value={lobby.name} />
+        <input className="lobby_settings__input" type="text" value={lobby.name} />
       </div>
       <div className="lobby_settings__section">
         <span>Pack name</span>
-        <input type="text" value={lobby.pack} />
+        <input className="lobby_settings__input" type="text" value={lobby.pack} />
       </div>
     </div>
   )
