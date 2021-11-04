@@ -2,15 +2,24 @@ $_yellow: #ffff00;
 
 .logged_page {
   width: 100%;
-  height: calc(100vh - 60px);
+
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.greetings {
+  font-family: Abibas;
+  color: $_yellow;
+  font-size: 48pt;
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .lobby_list {
   width: 70%;
-  height: 70%;
+  height: 665px;
   background-color: #373434;
   border-radius: 10px;
   border: black solid 3px;
@@ -37,7 +46,6 @@ $_yellow: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: $_yellow 2px solid;
 }
 
 .quantity_ {
@@ -45,7 +53,6 @@ $_yellow: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: $_yellow 2px solid;
 }
 
 .leader_name {
@@ -53,7 +60,6 @@ $_yellow: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: $_yellow 2px solid;
 }
 
 .pack_name {
@@ -61,10 +67,9 @@ $_yellow: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: $_yellow 2px solid;
 }
 
-.connection_button {
+.connection_button_text {
   width: 20%;
 }
 
@@ -79,6 +84,29 @@ $_yellow: #ffff00;
 .line_splitting:hover {
   background-color: rgba(72, 72, 72, 0.58);
   transition-duration: 200ms;
+}
+
+
+
+
+.connection_button {
+  width: 20%;
+}
+
+.connection_button_active {
+  background-color: black;
+  font-family: Abibas;
+  border: solid 1px #d7d7b3;
+  border-radius: 7px;
+  margin: 5px;
+  color: white;
+  padding: 2px 8px 2px 8px;
+  font-size: 14pt;
+}
+.connection_button_active:hover {
+  color: black;
+  background-color: white;
+  transition-duration: 0.2s;
 }
 
 

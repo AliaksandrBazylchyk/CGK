@@ -17,8 +17,7 @@ const AuthComponent = ({...props}) => {
               <div className="form_group">
                 {props.logType === "Register" &&
                 <>
-                    <input type="text" className="form_field" placeholder="Nickname" name="Nickname" required/>
-                    <input type="text" className="form_field" placeholder="Email" name="Email" required/>
+                    <input type="email" className="form_field" placeholder="Email" name="Email" required/>
                 </>
                 }
                 <input type="text" className="form_field" placeholder="Login" name="Login" required/>

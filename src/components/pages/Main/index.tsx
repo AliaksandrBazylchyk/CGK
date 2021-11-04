@@ -2,7 +2,7 @@ import React from "react";
 import Guest from "./Guest";
 import Logged from "./Logged";
 
-const isAuthorizated = true;
+const isAuthorizated = false;
 
 const Main = () => {
     return (

@@ -6,7 +6,7 @@ import AuthComponent from "./AuthComponent";
 
 const Header = () => {
 
-  const isAuthorizated = true;
+  const isAuthorizated = false;
 
   const stateChanger = () => {
     setIsOpen(false)
