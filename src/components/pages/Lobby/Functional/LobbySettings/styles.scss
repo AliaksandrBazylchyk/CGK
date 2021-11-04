@@ -10,4 +10,15 @@
     align-items: center;
     margin: 15px;
   };
+  &__input {
+    width: 100%;
+    padding-top: 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
 }
