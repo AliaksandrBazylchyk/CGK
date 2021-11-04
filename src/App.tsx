@@ -6,10 +6,10 @@ import Main from './components/pages/Main';
 import Contacts from './components/pages/Contacts';
 import Rights from './components/pages/Rights';
 import Rules from './components/pages/Rules';
+import Lobby from 'components/pages/Lobby';
+import Profile from 'components/pages/Profile';
 
 import './App.scss';
-import Lobby from 'components/pages/Lobby';
-
 
 function App() {
   return (
@@ -18,23 +18,27 @@ function App() {
       <Switch>
           <Route
             exact path="/"
-            component={() => <Main/>}
+            component={() => <Main />}
           />
           <Route
             path="/contacts"
-            component={() => <Contacts/>}
+            component={() => <Contacts />}
           />
           <Route
             path="/Rights"
-            component={() => <Rights/>}
+            component={() => <Rights />}
           />
           <Route
             path="/Rules"
-            component={() => <Rules/>}
+            component={() => <Rules />}
           />
           <Route
             path="/Lobby"
-            component={() => <Lobby/>}
+            component={() => <Lobby />}
+          />
+          <Route
+            path="/Profile"
+            component={() => <Profile />}
           />
       </Switch>
     </div>
