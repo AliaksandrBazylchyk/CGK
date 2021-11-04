@@ -1,0 +1,13 @@
+.lobby_settings {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  };
+}

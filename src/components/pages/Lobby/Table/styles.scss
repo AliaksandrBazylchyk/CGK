@@ -1,0 +1,14 @@
+.table {
+  width: 800px;
+
+  &__extreme_row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  &__central_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
