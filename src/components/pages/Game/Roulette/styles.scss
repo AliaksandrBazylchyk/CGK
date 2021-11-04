@@ -1,0 +1,48 @@
+.roulette {
+  width: 600px;
+  height: 600px;
+
+}
+
+.roulette_table {
+  z-index: -1;
+  position: relative;
+}
+
+.roulette_center {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.roulette_top {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+}
+
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
