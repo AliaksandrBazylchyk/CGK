@@ -1,0 +1,27 @@
+.game {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.game_center {
+  height: 100%;
+  display: inline-block;
+
+}
+
+.webcam {
+  margin: 10px 25px 10px 25px;
+  width: 250px;
+  height: 150px;
+  background: black;
+}

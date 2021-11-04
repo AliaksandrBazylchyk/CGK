@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Table from './Table';
+import Functional from './Functional';
 
 import './styles.scss';
-import Functional from './Functional';
 
 const Lobby = () => {
   return (
