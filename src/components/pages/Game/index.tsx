@@ -1,31 +1,31 @@
-import React from "react";
-import "./styles.scss";
-import Roulette from "./Roulette";
+import React from 'react';
+import './styles.scss';
+import Roulette from './Roulette';
 
 const Lobby = () => {
   const users = [
     {
-      name: "John",
+      name: 'John',
       socket_token: 123,
     },
     {
-      name: "Kenny",
+      name: 'Kenny',
       socket_token: 123,
     },
     {
-      name: "Olaf",
+      name: 'Olaf',
       socket_token: 123,
     },
     {
-      name: "Sven",
+      name: 'Sven',
       socket_token: 123,
     },
     {
-      name: "Kacy",
+      name: 'Kacy',
       socket_token: 123,
     },
     {
-      name: "Kacy",
+      name: 'Kacy',
       socket_token: 123,
     },
   ];
@@ -34,7 +34,7 @@ const Lobby = () => {
     <div className="game">
       <div className="game__top">
         {users.map((user) => (
-          <div className="webcam" id={user.name}></div>
+          <div key={user.name} className="webcam" id={user.name}></div>
         ))}
       </div>
       <div className="game__lefts">a</div>

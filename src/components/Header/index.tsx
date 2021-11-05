@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import AuthComponent from "./AuthComponent";
+import AuthComponent from './AuthComponent';
 
-import miniLogo from "assets/header/logo.png";
-import "./styles.scss";
+import miniLogo from 'assets/header/logo.png';
+import './styles.scss';
 
 const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [logType, setLogType] = useState("");
+  const [logType, setLogType] = useState('');
 
   const isAuthorizated = true;
 
@@ -19,16 +19,16 @@ const Header = () => {
 
   const infoButtons = [
     {
-      name: "КОНТАКТЫ",
-      link: "/contacts",
+      name: 'КОНТАКТЫ',
+      link: '/contacts',
     },
     {
-      name: "ПРАВИЛА",
-      link: "/rules",
+      name: 'ПРАВИЛА',
+      link: '/rules',
     },
     {
-      name: "ПРАВА",
-      link: "/rights",
+      name: 'ПРАВА',
+      link: '/rights',
     },
   ];
 
@@ -59,7 +59,7 @@ const Header = () => {
             <button
               className="register_button"
               onClick={() => (
-                setIsOpen(true), setLogType("Register"), console.log(isOpen, logType)
+                setIsOpen(true), setLogType('Register'), console.log(isOpen, logType)
               )}
             >
               REGISTER
@@ -67,7 +67,7 @@ const Header = () => {
             <button
               className="login_button"
               onClick={() => (
-                setIsOpen(true), setLogType("login")
+                setIsOpen(true), setLogType('login')
               )}
             >
               LOGIN

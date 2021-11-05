@@ -1,8 +1,8 @@
 import React from 'react';
 
-import bigLogo from "./bigLogo.png";
+import bigLogo from './bigLogo.png';
 
-import "./styles.scss"
+import './styles.scss';
 
 const Guest = () => {
   return (

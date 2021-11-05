@@ -1,8 +1,10 @@
-import React from "react";
-import "./styles.scss";
-import { ReactComponent as RouletteTable } from "assets/table.svg";
-import { ReactComponent as RouletteArrow } from "assets/arrow.svg";
-import { ReactComponent as RouletteTop } from "assets/top_table.svg";
+import React from 'react';
+
+import { ReactComponent as RouletteTable } from 'assets/table.svg';
+import { ReactComponent as RouletteArrow } from 'assets/arrow.svg';
+import { ReactComponent as RouletteTop } from 'assets/top_table.svg';
+
+import './styles.scss';
 
 const Roulette = () => {
   return (
