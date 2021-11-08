@@ -18,15 +18,14 @@ export interface UserInfo {
   name: string,
   image: string, 
 }
-export interface Tokens {
-  acsessToken: string,
-  refreshToken: string,
+export interface Token {
+  token: string,
 }
 export interface AuthDates {
   dates: UserAuthDates,
   typeForm: string,
 }
-export interface UserInfoTaked extends UserInfo, Tokens {}
+export interface UserInfoTaked extends UserInfo, Token {}
 
 export interface UserAuth {
   type: typeof USER_AUTH,
@@ -38,7 +37,7 @@ export interface UserAuthRequire {
 }
 export interface UserAutoAuthRequire {
   type: typeof USER_AUTO_AUTH_REQUIRE,
-  payload: Tokens,
+  payload: Token,
 }
 
 export interface UserDeauth {

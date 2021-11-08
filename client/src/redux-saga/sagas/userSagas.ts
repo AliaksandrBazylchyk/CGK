@@ -24,25 +24,13 @@ import {
   UserInfoTaked,
 } from '../types/userTypes';
 
-// function* authSaga(action: UserAuthRequire) {
-//   try {
-//     yield put(userAuth(action.payload));
-//   } catch (e: any) {
-//     yield put(
-//       userFailure({
-//         error: e.message,
-//       }),
-//     );
-//   }
-// }
-
 function* hendAuthSaga(action: UserAuthRequire) {
   try {
     const { dates, typeForm } = action.payload;
     const authorization = () => axios.post(`http://localhost:3001/accounts/auth/${typeForm}`,
       { ...dates });
     const response: AxiosResponse<UserInfoTaked> = yield call(authorization);
-    authSaga({...response.data});
+    yield authSaga({...response.data});
   } catch (e: any) {
     yield put(
       userFailure({
@@ -54,12 +42,12 @@ function* hendAuthSaga(action: UserAuthRequire) {
 
 function* autoAuthSaga(action: UserAutoAuthRequire) {
   try {
-    const { acsessToken, refreshToken } = action.payload;
-    const headers = {authorization: `Bearer ${acsessToken} ${refreshToken}`} 
+    const { token } = action.payload;
+    const headers = {authorization: `Bearer ${token}`} 
     const authorization = () => axios.post('http://localhost:3001/accounts/auth/auto', {},
       { headers: headers });
     const response: AxiosResponse<UserInfoTaked> = yield call(authorization);
-    authSaga({...response.data});
+    yield authSaga({...response.data});
   } catch (e: any) {
     yield put(
       userFailure({
@@ -72,8 +60,7 @@ function* autoAuthSaga(action: UserAutoAuthRequire) {
 function* authSaga(dates: UserInfoTaked) {
   try {
     yield put(userAuth({...dates}));
-    localStorage.setItem('acsessToken', dates.acsessToken);
-    localStorage.setItem('refreshToken', dates.refreshToken);
+    localStorage.setItem('token', dates.token);
   } catch (e: any) {
     yield put(
       userFailure({
