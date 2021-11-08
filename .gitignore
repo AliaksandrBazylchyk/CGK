@@ -1,0 +1,4 @@
+/backend/.idea/
+/backend/backend/bin/
+/backend/backend/obj/Debug/
+/backend/backend/ngrok.exe
